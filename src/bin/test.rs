@@ -1,7 +1,6 @@
 use pyo3::prelude::*;
 
-#[no_mangle]
-pub extern "C" fn test_badger() {
+fn main () {
     let gil = Python::acquire_gil();
     let py = gil.python();
 
